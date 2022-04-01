@@ -1,42 +1,24 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+:root {
+    /* PALETA DE COLORES */
+    --primary-color-300: #08080e;
+    --primary-color-200: #171738;
+    --primary-color-100: #62628e;
+    --secondary-color: #efd780;
+    --secondary-color-h: #bfac66; /* hover */
+    --secondary-color-a: #8f814c; /* active */
+    --neutral-color: #fff;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-button {
-  font-size: calc(10px + 2vmin);
+    /* TEXTO */
+    --font-titles: 700; /* font-weight */
+    --font-footer: 500;
+    --font-navbar: 400;
 }
