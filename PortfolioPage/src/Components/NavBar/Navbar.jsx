@@ -1,5 +1,6 @@
 import styles from "./Navbar.module.css";
 import { useState, useEffect } from "react";
+import Burger from "./BurgerMenu";
 import { FaLaptopCode, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
 import { IoClose } from "react-icons/io5";
@@ -14,6 +15,10 @@ const NavBar = () => {
         detectW({
             winWidth: window.innerWidth,
         });
+        // This way the burger menu closes when is not necessary
+        if (window.innerWidth > 720) {
+            setOpen(false);
+        }
     };
 
     useEffect(() => {
@@ -30,7 +35,7 @@ const NavBar = () => {
     return (
         <nav
             className={
-                open === true
+                open === true && windowDimension.winWidth <= 720
                     ? `${styles.navbar} ${styles.burger}`
                     : styles.navbar
             }
@@ -55,6 +60,7 @@ const NavBar = () => {
                         )}
                     </a>
                     <a href="">Nicolás Briceño</a>
+                    {open && <Burger />}
                 </div>
                 {windowDimension.winWidth > 720 ? (
                     <div className={styles.links}>
