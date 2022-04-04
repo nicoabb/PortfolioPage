@@ -1,0 +1,120 @@
+/* GENERAL THINGS */
+.navbar {
+    background-color: var(--primary-color-300);
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+.navbar .limit {
+    max-width: 1280px;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 26% 50% 24%;
+}
+.navbar a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+/* ICON AND NAME "LOGO" */
+.navbar .logo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    column-gap: 1rem;
+}
+
+/* LINKS OF ABOUT ME AND PROJECTS */
+.navbar .links {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+/* BUTTONS OF RESUME, GITHUB AND LINKEDIN */
+.navbar .btns {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+}
+.navbar button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color-300);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    width: 5rem;
+    height: 2.4rem;
+}
+.navbar .icons {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+/* BURGER MENU */
+.burgerMenu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0px;
+    top: 80px;
+    width: 100%;
+    height: auto;
+    row-gap: 1.5rem;
+    padding: 1.5rem 0;
+    background-color: rgb(171, 171, 223, 0.9);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    align-items: center;
+}
+
+.burgerMenu .burgerLinks {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--primary-color-300);
+}
+
+.burgerMenu .burgerLinks:active {
+    font-weight: bold;
+}
+
+/* BURGER MENU COLORS IN NAVBAR */
+.burger a {
+    color: var(--burger-color)
+}
+
+.burger button {
+    background-color: var(--burger-color);
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 900px) {
+    .navbar .limit {
+        grid-template-columns: 30% 40% 30%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .navbar .limit {
+        grid-template-columns: 50% 50%;
+    }
+    .navbar .logo {
+        justify-content: flex-start;
+        margin-left: 7%;
+    }
+    .navbar .btns {
+        justify-content: flex-end;
+        margin-right: 7%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar .limit {
+        display: flex;
+    }
+}
