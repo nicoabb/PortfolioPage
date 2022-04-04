@@ -15,10 +15,15 @@
     --secondary-color: #efd780;
     --secondary-color-h: #bfac66; /* hover */
     --secondary-color-a: #8f814c; /* active */
+    --burger-color: #ababdf;
     --neutral-color: #fff;
 
     /* TEXTO */
     --font-titles: 700; /* font-weight */
     --font-footer: 500;
     --font-navbar: 400;
+}
+
+body {
+    background-color: var(--primary-color-200);
 }

@@ -1,29 +1,80 @@
 import styles from "./Navbar.module.css";
+import { useState, useEffect } from "react";
 import { FaLaptopCode, FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { FiMenu } from "react-icons/fi";
+import { IoClose } from "react-icons/io5";
 
 const NavBar = () => {
+    // SCREEN WIDTH READER
+    const [windowDimension, detectW] = useState({
+        winWidth: window.innerWidth,
+    });
+
+    const detectSize = () => {
+        detectW({
+            winWidth: window.innerWidth,
+        });
+    };
+
+    useEffect(() => {
+        window.addEventListener("resize", detectSize);
+
+        return () => {
+            window.removeEventListener("resize", detectSize);
+        };
+    }, [windowDimension]);
+
+    // REPLACE MENU LOGO FOR X WHEN CLICKED
+    const [open, setOpen] = useState(false);
+
     return (
-        <nav className={styles.navbar}>
+        <nav
+            className={
+                open === true
+                    ? `${styles.navbar} ${styles.burger}`
+                    : styles.navbar
+            }
+        >
             <div className={styles.limit}>
-                <a className={styles.logo} href="">
-                    <FaLaptopCode className={styles.icons} />
-                    Nicolás Briceño
-                </a>
-                <div className={styles.links}>
-                    <a href="">About Me</a>
-                    <a href="">Projects</a>
+                <div className={styles.logo}>
+                    <a>
+                        {windowDimension.winWidth <= 720 ? (
+                            open === true ? (
+                                <IoClose
+                                    className={styles.icons}
+                                    onClick={() => setOpen(!open)}
+                                />
+                            ) : (
+                                <FiMenu
+                                    className={styles.icons}
+                                    onClick={() => setOpen(!open)}
+                                />
+                            )
+                        ) : (
+                            <FaLaptopCode className={styles.icons} />
+                        )}
+                    </a>
+                    <a href="">Nicolás Briceño</a>
                 </div>
-                <div className={styles.btns}>
-                    <a href="">
-                        <button>Resume</button>
-                    </a>
-                    <a href="">
-                        <FaGithubSquare className={styles.icons} />
-                    </a>
-                    <a href="">
-                        <FaLinkedin className={styles.icons} />
-                    </a>
-                </div>
+                {windowDimension.winWidth > 720 ? (
+                    <div className={styles.links}>
+                        <a href="">About Me</a>
+                        <a href="">Projects</a>
+                    </div>
+                ) : null}
+                {windowDimension.winWidth > 480 ? (
+                    <div className={styles.btns}>
+                        <a href="">
+                            <button>Resume</button>
+                        </a>
+                        <a href="">
+                            <FaGithubSquare className={styles.icons} />
+                        </a>
+                        <a href="">
+                            <FaLinkedin className={styles.icons} />
+                        </a>
+                    </div>
+                ) : null}
             </div>
         </nav>
     );

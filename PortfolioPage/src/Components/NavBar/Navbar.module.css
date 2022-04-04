@@ -34,7 +34,7 @@
     font-size: 1.25rem;
 }
 
-/* BUTTONS OF RESUME GITHUB AND LINKEDIN */
+/* BUTTONS OF RESUME, GITHUB AND LINKEDIN */
 .navbar .btns {
     display: inline-flex;
     justify-content: center;
@@ -55,9 +55,38 @@
     height: 2.5rem;
 }
 
+/* BURGER MENU COLORS */
+.burger a {
+    color: var(--burger-color)
+}
+
+.burger button {
+    background-color: var(--burger-color);
+}
+
 /* RESPONSIVE DESIGN */
 @media screen and (max-width: 900px) {
     .navbar .limit {
         grid-template-columns: 30% 40% 30%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .navbar .limit {
+        grid-template-columns: 50% 50%;
+    }
+    .navbar .logo {
+        justify-content: flex-start;
+        margin-left: 7%;
+    }
+    .navbar .btns {
+        justify-content: flex-end;
+        margin-right: 7%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar .limit {
+        display: flex;
     }
 }
