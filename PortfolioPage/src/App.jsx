@@ -1,12 +1,16 @@
 import "./App.css";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/NavBar/Navbar";
+import LandPage from "./Pages/LandPage";
 
 function App() {
     return (
-        <Router>
+        <BrowserRouter>
             <Navbar />
-        </Router>
+            <Routes>
+                <Route path="/" element={<LandPage />}></Route>
+            </Routes>
+        </BrowserRouter>
     );
 }
 
