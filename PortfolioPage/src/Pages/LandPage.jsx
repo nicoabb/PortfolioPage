@@ -11,7 +11,7 @@ const LandPage = () => {
                 code="I code the web"
                 currently="Currently studing software engineering, always ready to learn more. I love web development, specially the frontend area."
             />
-            <ProjectsPrev />
+            <ProjectsPrev prevTitle="Projects I've made so far" />
         </div>
     );
 };
