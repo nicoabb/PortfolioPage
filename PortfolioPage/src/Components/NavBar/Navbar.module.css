@@ -85,11 +85,11 @@
 
 /* BURGER MENU COLORS IN NAVBAR */
 .burger a {
-    color: var(--burger-color)
+    color: var(--primary-color-300)
 }
 
 .burger button {
-    background-color: var(--burger-color);
+    background-color: var(--primary-color-300);
 }
 
 /* RESPONSIVE DESIGN */

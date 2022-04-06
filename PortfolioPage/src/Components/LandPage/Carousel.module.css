@@ -5,7 +5,7 @@
 .container .line {
     grid-column: 1;
     border: 2px solid var(--secondary-color);
-    width: 80%;
+    width: 86%;
     max-width: 1080px;
     justify-self: end;
     margin: auto;

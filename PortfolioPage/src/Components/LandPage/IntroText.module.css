@@ -1,0 +1,78 @@
+.intro {
+    width: 86%;
+    max-width: 1080px;
+    margin: auto;
+}
+.intro .line {
+    grid-column: 1;
+    border: 2px solid var(--secondary-color);
+    width: 100%;
+    max-width: 1080px;
+    justify-self: end;
+    margin: auto;
+    order: 7;
+}
+.intro h1 {
+    color: var(--secondary-color);
+}
+.intro h2 {
+    color: var(--primary-color-000);
+}
+.intro p {
+    font-weight: bold;
+    color: var(--neutral-color);
+}
+.intro p:first-of-type {
+    margin: 3rem 0 1rem;
+}
+.intro p:last-of-type {
+    margin: 1rem 0 3rem;
+}
+
+@media screen and (min-width: 1080px) {
+    .intro h1 {
+        font-size: 4.7rem;
+    }
+    .intro h2 {
+        font-size: 4rem;
+    }
+    .intro p {
+        font-size: 1rem; 
+    }
+}
+@media screen and (max-width: 1079px) {
+    .intro h1 {
+        font-size: 4.5rem;
+    }
+    .intro h2 {
+        font-size: 3.8rem;
+    }
+    .intro p {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 720px) {
+    .intro h1 {
+        font-size: 9vw;
+    }
+    .intro h2 {
+        font-size: 8.5vw;
+    }
+    .intro p {
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .intro h1 {
+        font-size: 3rem;
+    }
+    .intro h2 {
+        font-size: 2.5rem;
+    }
+}
