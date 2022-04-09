@@ -19,7 +19,7 @@
     color: var(--primary-color-000);
 }
 .intro p {
-    font-weight: bold;
+    font-weight: 500;
     color: var(--neutral-color);
 }
 .intro p:first-of-type {
@@ -28,7 +28,7 @@
 .intro p:last-of-type {
     margin: 1rem 0 3rem;
 }
-
+/*
 @media screen and (min-width: 1080px) {
     .intro h1 {
         font-size: 4.7rem;
@@ -39,13 +39,13 @@
     .intro p {
         font-size: 1rem; 
     }
-}
-@media screen and (max-width: 1079px) {
+}*/
+@media screen and (min-width: 721px) {
     .intro h1 {
-        font-size: 4.5rem;
+        font-size: 4rem;
     }
     .intro h2 {
-        font-size: 3.8rem;
+        font-size: 3.5rem;
     }
     .intro p {
         font-size: 1rem;
@@ -53,10 +53,10 @@
 }
 @media screen and (max-width: 720px) {
     .intro h1 {
-        font-size: 9vw;
+        font-size: 8.8vw;
     }
     .intro h2 {
-        font-size: 8.5vw;
+        font-size: 8.1vw;
     }
     .intro p {
         font-size: 0.9rem;
