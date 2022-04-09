@@ -59,7 +59,7 @@ const NavBar = () => {
                             <FaLaptopCode className={styles.icons} />
                         )}
                     </a>
-                    <a href="">Nicolás Briceño</a>
+                    <a href="#top">Nicolás Briceño</a>
                     {open && <Burger />}
                 </div>
                 {windowDimension.winWidth > 720 ? (
@@ -73,7 +73,11 @@ const NavBar = () => {
                         <a href="">
                             <button>Resume</button>
                         </a>
-                        <a href="">
+                        <a
+                            href="https://github.com/nicoabb"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <FaGithubSquare className={styles.icons} />
                         </a>
                         <a href="">

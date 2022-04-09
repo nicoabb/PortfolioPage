@@ -6,7 +6,7 @@
     grid-column: 1;
     border: 2px solid var(--secondary-color);
     width: 86%;
-    max-width: 1080px;
+    max-width: 920px;
     justify-self: end;
     margin: auto;
     order: 7;
@@ -17,7 +17,7 @@
     grid-row: 1;
     width: 90%;
     height: auto;
-    max-width: 1080px;
+    max-width: 920px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
 }

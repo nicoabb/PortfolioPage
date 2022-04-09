@@ -17,6 +17,9 @@
     color: var(--secondary-color);
     text-decoration: none;
 }
+.navbar a:active {
+    color: var(--secondary-color-a);
+}
 
 /* ICON AND NAME "LOGO" */
 .navbar .logo {
@@ -51,6 +54,10 @@
     border-radius: 5px;
     width: 5rem;
     height: 2.4rem;
+    cursor: pointer;
+}
+.navbar button:active {
+    background-color: var(--secondary-color-a);
 }
 .navbar .icons {
     width: 2.5rem;
@@ -78,6 +85,10 @@
     font-weight: 400;
     color: var(--primary-color-300);
 }
+.burgerMenu .burgerLinks:active {
+    font-weight: bold;
+    color: var(--primary-color-300);
+}
 
 .burgerMenu .burgerLinks:active {
     font-weight: bold;
@@ -85,14 +96,35 @@
 
 /* BURGER MENU COLORS IN NAVBAR */
 .burger a {
-    color: var(--primary-color-300)
+    color: var(--primary-color-000)
 }
-
 .burger button {
-    background-color: var(--primary-color-300);
+    background-color: var(--primary-color-000);
+}
+.burger a:active {
+    color: var(--primary-color-100);
+}
+.burger button:active {
+    background-color: var(--primary-color-100);
 }
 
 /* RESPONSIVE DESIGN */
+@media screen and (min-width: 720px) {
+    .navbar a:hover {
+        color: var(--secondary-color-h);
+    }
+    .navbar button:hover {
+        background-color: var(--secondary-color-h);
+    }
+    .burger a:hover, .burger button:hover {
+        color: var(--primary-color-100);
+    }
+    .burgerMenu .burgerLinks:hover {
+        font-weight: bold;
+        color: var(--primary-color-300);
+    }  
+}
+
 @media screen and (max-width: 900px) {
     .navbar .limit {
         grid-template-columns: 30% 40% 30%;
