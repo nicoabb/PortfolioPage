@@ -21,7 +21,7 @@ const AboutMe = (props) => {
                 <img
                     src={props.img3}
                     alt="Imagen 2"
-                    className={styles.imgSquare}
+                    className={`${styles.imgSquare} ${styles.horizontalImg}`}
                 />
                 <img
                     src={props.img4}

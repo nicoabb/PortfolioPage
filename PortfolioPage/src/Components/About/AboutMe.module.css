@@ -1,25 +1,42 @@
 .ASection {
-    max-width: 930px;
+    margin: auto;
+    max-width: 900px;
     display: flex;
     flex-direction: column;
 }
 
 .ASection h1 {
-    margin: auto;
-    font-size: 4rem;
+    margin: 4rem auto;
+    font-size: 8vw;
     color: var(--secondary-color);
 }
 
 .imgIntro {
     width: 100%;
-    height: 16rem;
+    height: 27vh;
     object-fit: cover;
-    max-height: 300px;
+    max-height: 200px;
+}
+
+.lines {
+    border: 2px solid var(--secondary-color);
+    width: 100%;
+    margin: 2rem auto;
 }
 
 .ASection p {
     color: var(--neutral-color);
     font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.ASection p a {
+    color: var(--secondary-color);
+}
+
+.ASection p:last-of-type {
+    margin-bottom: 0;
 }
 
 .imgContainer {
@@ -27,10 +44,69 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     max-height: 300px;
+    margin-bottom: 4rem;
 }
 
 .imgSquare {
-    width: 16rem;
-    height: 16rem;
+    width: 32%;
+    height: 25vh;
+    max-height: 200px;
     object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+    .ASection {
+        max-width: 75%;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .ASection h1 {
+        font-size: 64px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .ASection h1 {
+        margin: 3rem auto;
+    }
+    .imgIntro {
+        height: 22vh;
+    }
+    .imgContainer {
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ASection h1 {
+        font-size: 40px;
+    }
+    .imgIntro {
+        height: 9rem;
+    }
+    .imgContainer {
+        max-height: none;
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        grid-template-rows: repeat(2,50%);
+        gap: 5%;
+        padding: 2.5%;
+    }
+    .imgSquare {
+        height: 9rem;
+        width: 100%;
+    }
+    .imgSquare:first-of-type {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .horizontalImg {
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+    .imgSquare:last-of-type {
+        grid-column: 2;
+        grid-row: 2;
+    }
 }
