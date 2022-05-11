@@ -1,23 +1,32 @@
 import styles from "./Navbar.module.css";
+import { Link } from "react-router-dom";
 
 const Burger = () => {
     return (
         <div className={styles.burgerMenu}>
-            <a className={styles.burgerLinks} href="">
-                About Me
-            </a>
-            <a className={styles.burgerLinks} href="">
+            <Link to="/About" className={styles.burgerLinks}>
+                About
+            </Link>
+            <Link to="/Projects" className={styles.burgerLinks}>
                 Projects
-            </a>
-            <a className={styles.burgerLinks} href="">
+            </Link>
+            <a
+                className={styles.burgerLinks}
+                href="https://github.com/nicoabb"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 GitHub
             </a>
-            <a className={styles.burgerLinks} href="">
+            <a
+                className={styles.burgerLinks}
+                href="https://linkedin.com/in/nicoabb"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 LinkedIn
             </a>
-            <a className={styles.burgerLinks} href="">
-                Resume
-            </a>
+            <a className={styles.burgerLinks}>Resume</a>
         </div>
     );
 };

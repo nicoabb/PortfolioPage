@@ -1,6 +1,6 @@
 import styles from "./Navbar.module.css";
 import { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Burger from "./BurgerMenu";
 import { FaLaptopCode, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
