@@ -11,9 +11,12 @@ function App() {
         <BrowserRouter>
             <Navbar />
             <Routes>
-                <Route path="/" element={<LandPage />}></Route>
-                <Route path="/About" element={<About />}></Route>
-                <Route path="/Projects" element={<Projects />}></Route>
+                <Route path="/PortfolioPage/" element={<LandPage />}></Route>
+                <Route path="/PortfolioPage/About" element={<About />}></Route>
+                <Route
+                    path="/PortfolioPage/Projects"
+                    element={<Projects />}
+                ></Route>
             </Routes>
             <Footer />
         </BrowserRouter>
