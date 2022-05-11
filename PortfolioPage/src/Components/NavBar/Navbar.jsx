@@ -1,5 +1,6 @@
 import styles from "./Navbar.module.css";
 import { useState, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import Burger from "./BurgerMenu";
 import { FaLaptopCode, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
@@ -59,13 +60,13 @@ const NavBar = () => {
                             <FaLaptopCode className={styles.icons} />
                         )}
                     </a>
-                    <a href="#top">Nicolás Briceño</a>
+                    <Link to="/">Nicolás Briceño</Link>
                     {open && <Burger />}
                 </div>
                 {windowDimension.winWidth > 720 ? (
                     <div className={styles.links}>
-                        <a href="">About Me</a>
-                        <a href="">Projects</a>
+                        <Link to="/About">About</Link>
+                        <Link to="/Projects">Projects</Link>
                     </div>
                 ) : null}
                 {windowDimension.winWidth > 480 ? (
@@ -80,7 +81,11 @@ const NavBar = () => {
                         >
                             <FaGithubSquare className={styles.icons} />
                         </a>
-                        <a href="">
+                        <a
+                            href="https://linkedin.com/in/nicoabb"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <FaLinkedin className={styles.icons} />
                         </a>
                     </div>
