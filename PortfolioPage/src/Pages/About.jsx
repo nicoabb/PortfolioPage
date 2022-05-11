@@ -22,10 +22,10 @@ const About = () => {
                     <p>
                         I decided to study Software Engineering so I can build
                         my own ideas and have no limits when it comes to work. I
-                        think of programming the way I thought when I was a kid
-                        of building Lego, you just need the inspiration,
+                        think of programming the way I thought of building Lego
+                        when I was a kid, you just need the inspiration,
                         motivation, and the necessary blocks to do amazing
-                        things, only now I get to create my own blocks.
+                        things, but now I get to create my own blocks.
                     </p>
                     <p>
                         I work with Python, Java, HTML, CSS, JavaScript, and
