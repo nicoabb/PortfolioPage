@@ -1,0 +1,36 @@
+.ASection {
+    max-width: 930px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ASection h1 {
+    margin: auto;
+    font-size: 4rem;
+    color: var(--secondary-color);
+}
+
+.imgIntro {
+    width: 100%;
+    height: 16rem;
+    object-fit: cover;
+    max-height: 300px;
+}
+
+.ASection p {
+    color: var(--neutral-color);
+    font-weight: bold;
+}
+
+.imgContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-height: 300px;
+}
+
+.imgSquare {
+    width: 16rem;
+    height: 16rem;
+    object-fit: cover;
+}
