@@ -1,0 +1,4 @@
+.proj {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,5 +1,7 @@
+import Proj from "../Components/Projects/Projects";
+
 const Projects = () => {
-    return <div></div>;
+    return <Proj />;
 };
 
 export default Projects;
