@@ -64,3 +64,31 @@
         cursor: pointer;
     }
 }
+
+@media screen and (min-width: 481px) and (max-width: 840px)  {
+    .cardContainer .card {
+        width: 24vw;
+        height: 31vw;
+        gap: 0.5vw;
+        padding-bottom: 2vw;
+    }
+    .cardContainer .hoverDiv {
+        width: 24vw;
+        height: 31vw;
+    }
+    .card img {
+        width: 21vw;
+        height: 22vw;
+        margin: 2vw auto;
+    }
+    .card h4 {
+        font-size: 2.2vw;
+    }
+    .card .icons {
+        gap: 0.4vw;
+    }
+    .card .icons svg {
+        width: 2.5vw;
+        height: 2.5vw;
+    }
+}

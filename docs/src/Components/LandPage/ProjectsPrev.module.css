@@ -35,10 +35,9 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        text-align: center;
     }
     .proPrev h3 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
     .proPrev .cardContainer {
         gap: 1.5rem;
