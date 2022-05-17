@@ -5,8 +5,12 @@ import Burger from "./BurgerMenu";
 import { FaLaptopCode, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
 import { IoClose } from "react-icons/io5";
+import { useTranslation } from "react-i18next";
 
 const NavBar = () => {
+    // LANGUAGE
+    const [t, i18n] = useTranslation("global");
+
     // SCREEN WIDTH READER
     const [windowDimension, detectW] = useState({
         winWidth: window.innerWidth,
@@ -65,8 +69,8 @@ const NavBar = () => {
                 </div>
                 {windowDimension.winWidth > 720 ? (
                     <div className={styles.links}>
-                        <Link to="/About">About</Link>
-                        <Link to="/Projects">Projects</Link>
+                        <Link to="/About">{t("navbar.about")}</Link>
+                        <Link to="/Projects">{t("navbar.project")}</Link>
                     </div>
                 ) : null}
                 {windowDimension.winWidth > 480 ? (

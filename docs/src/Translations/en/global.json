@@ -1,0 +1,32 @@
+{
+    "navbar": {
+        "about": "About",
+        "project": "Projects"  
+    },
+    "landpage": {
+        "hi": "Hi, my name is",
+        "iDo": "I code the web",
+        "current": "Currently studing software engineering, always ready to learn more. I love web development, specially the frontend area.",
+        "iMade": "Projects I've made so far",
+        "langUsed": "Languages"
+    },
+    "about": {
+        "title": "About Me",
+        "firstP": "Growing up as a leader, I’ve had different opportunities that allowed me to become the person I am today. Strategic, maximizer, disciplined, creative and happy are some of the words I use to describe myself, they’re my guide to think and act the way I do.",
+        "secondP": "I decided to study Software Engineering so I can build my own ideas and have no limits when it comes to work. I think of programming the way I thought of building Lego when I was a kid, you just need the inspiration, motivation, and the necessary blocks to do amazing things, but now I get to create my own blocks.",
+        "thirdP": "I work with Python, Java, HTML, CSS, JavaScript, and React. If I must tell in which I’m better, CSS would be the answer, but in general I’m really good with the frontend area.",
+        "more": "If you want to know more about me,",
+        "click": "checkout my LinkedIn page."
+    },
+    "projects": {
+        "title": "Projects",
+        "firstDesc": "This project is inspired in Booking, a platform made for traveling. Made with a team, I was in charge of the style and responsiveness of the project.",
+        "secondDesc": "This was my first webpage made, where I practice the things I knew at the time with HTML and CSS.",
+        "thirdDesc": "After the Random Page, I needed to practice JS, so I made a basic calculator that looks good and works good."
+    },
+    "footer": {
+        "contact": "Contact me",
+        "made": "Made with React",
+        "rights": "All rights reserved"
+    }
+}

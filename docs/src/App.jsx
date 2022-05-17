@@ -7,7 +7,6 @@ import Projects from "./Pages/Projects";
 import Footer from "./Components/Footer/Footer";
 
 function App() {
-    //Bienvenido
     return (
         <BrowserRouter>
             <Navbar />

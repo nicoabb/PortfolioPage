@@ -17,8 +17,14 @@ footer .line {
 }
 
 footer h4 {
+    width: fit-content;
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+footer .langLink:active {
+    color: var(--secondary-color-a);
+    cursor: pointer;
 }
 
 footer a, footer small {
@@ -54,7 +60,7 @@ footer svg {
     footer .container {
         display: flex;
         flex-direction: column;
-        margin: auto;
+        margin: 0 auto auto;
         gap: 0.5rem;
     }
     footer .container:first-of-type {
@@ -71,6 +77,10 @@ footer svg {
         width: 0;
         height: 100%;
         margin: auto;
+    }
+    footer .langLink:hover {
+        color: var(--secondary-color);
+        cursor: pointer;
     }
 }
 

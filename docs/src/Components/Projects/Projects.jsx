@@ -6,11 +6,14 @@ import img3 from "../../Img/project3.png";
 import { AiFillHtml5 } from "react-icons/ai";
 import { FaCss3, FaReact } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
+import { useTranslation } from "react-i18next";
 
 const Projects = (props) => {
+    const [t, i18n] = useTranslation("global");
+
     return (
         <section className={styles.proj}>
-            <h1>Projects</h1>
+            <h1>{t("projects.title")}</h1>
             <PCards
                 pLink="https://triveneco.web.app/"
                 img={img1}
@@ -19,7 +22,7 @@ const Projects = (props) => {
                 jsLogo={<SiJavascript />}
                 reactLogo={<FaReact />}
                 name="Triveneco"
-                desc="This project is inspired in Booking, a platform made for traveling. Made with a team, I was in charge of the style and responsiveness of the project."
+                desc={t("projects.firstDesc")}
             ></PCards>
             <PCards
                 pLink="https://nicoabb.github.io/Random-page/"
@@ -29,7 +32,7 @@ const Projects = (props) => {
                 jsLogo={null}
                 reactLogo={null}
                 name="Random Page"
-                desc="This was my first webpage made, where I practice the things I knew at the time with HTML and CSS. "
+                desc={t("projects.secondDesc")}
             ></PCards>
             <PCards
                 pLink="https://nicoabb.github.io/iOS-Calculator/"
@@ -39,7 +42,7 @@ const Projects = (props) => {
                 jsLogo={<SiJavascript />}
                 reactLogo={null}
                 name="iOS Calculator"
-                desc="After the Random Page, I needed to practice JS, so I made a basic calculator that looks good and works good."
+                desc={t("projects.thirdDesc")}
             ></PCards>
         </section>
     );

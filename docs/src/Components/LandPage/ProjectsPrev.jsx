@@ -16,7 +16,7 @@ const ProjectsPrev = (props) => {
                     linkTo="/Projects"
                     image={p1}
                     imgAlt="Triveneco webpage"
-                    lang="Languages"
+                    lang={props.lang}
                     htmlLogo={<AiFillHtml5 />}
                     cssLogo={<FaCss3 />}
                     jsLogo={<SiJavascript />}
@@ -26,7 +26,7 @@ const ProjectsPrev = (props) => {
                     linkTo="/Projects"
                     image={p2}
                     imgAlt="iOS calculator"
-                    lang="Languages"
+                    lang={props.lang}
                     htmlLogo={<AiFillHtml5 />}
                     cssLogo={<FaCss3 />}
                     jsLogo={<SiJavascript />}
@@ -36,7 +36,7 @@ const ProjectsPrev = (props) => {
                     linkTo="/Projects"
                     image={p3}
                     imgAlt="Random webpage"
-                    lang="Languages"
+                    lang={props.lang}
                     htmlLogo={<AiFillHtml5 />}
                     cssLogo={<FaCss3 />}
                     jsLogo={null}

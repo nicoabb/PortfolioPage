@@ -1,14 +1,17 @@
 import styles from "./Navbar.module.css";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Burger = () => {
+    const [t, i18n] = useTranslation("global");
+
     return (
         <div className={styles.burgerMenu}>
             <Link to="/About" className={styles.burgerLinks}>
-                About
+                {t("navbar.about")}
             </Link>
             <Link to="/Projects" className={styles.burgerLinks}>
-                Projects
+                {t("navbar.project")}
             </Link>
             <a
                 className={styles.burgerLinks}

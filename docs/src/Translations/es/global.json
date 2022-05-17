@@ -1,0 +1,32 @@
+{
+    "navbar": {
+        "about": "Acerca de",
+        "project": "Proyectos"  
+    },
+    "landpage": {
+        "hi": "Hola, mi nombre es",
+        "iDo": "Programo la web",
+        "current": "Actualmente estudio ingeniería de sistemas, siempre listo para aprender más. Me encanta el desarrollo web, en especial el área de frontend.",
+        "iMade": "Proyectos hechos hasta ahora",
+        "langUsed": "Lenguajes"
+    },
+    "about": {
+        "title": "Acerca de mí",
+        "firstP": "Formado como líder, he tenido diferentes oportunidades que me han permitido convertirme en la persona que soy hoy. Estratégico, maximizador, disciplinado, creativo y feliz son algunas de las palabras que utilizo para describirme, son la guía para pensar y actuar de la manera en que lo hago.",
+        "secondP": "Decidí estudiar Ingeniería de Sistemas para poder desarrollar mis propias ideas y no tener límites a la hora de trabajar. Pienso de la programación de la misma manera que lo hacía al armar Lego cuando era pequeño, solo se necesita la inspiración, motivación, y los bloques necesarios para hacer cosas increíbles, solo que ahora puedo crear mis propios bloques.",
+        "thirdP": "Trabajo con Python, Java, HTML, CSS, JavaScript y React. Si debo decir en cuál soy mejor, CSS sería la respuesta, pero en general soy muy bueno con el área de frontend.",
+        "more": "Si quiere saber más acerca de mí,",
+        "click": "visite mi página de LinkedIn"
+    },
+    "projects": {
+        "title": "Proyectos",
+        "firstDesc": "Este proyecto está inspirado en Booking, una plataforma de viajes. Hecho en equipo, estuve encargado del estilo y responsive del proyecto.",
+        "secondDesc": "Esta fue mi primera página web creada, con la que pude practicar las cosas que sabía de HTML y CSS en aquel momento.",
+        "thirdDesc": "Luego de la Random Page, necesitaba practicar JS, así que hice una calculadora básica que se viera y funcionara bien."
+    },
+    "footer": {
+        "contact": "Contáctame",
+        "made": "Hecho con React",
+        "rights": "Derechos reservados"
+    }
+}
