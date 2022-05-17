@@ -8,7 +8,7 @@ import Footer from "./Components/Footer/Footer";
 
 function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Navbar />
             <Routes>
                 <Route path="/" element={<LandPage />}></Route>
