@@ -23,7 +23,7 @@ const Projects = (props) => {
             ></PCards>
             <PCards
                 pLink="https://nicoabb.github.io/Random-page/"
-                img={img2}
+                img={img3}
                 htmlLogo={<AiFillHtml5 />}
                 cssLogo={<FaCss3 />}
                 jsLogo={null}
@@ -33,7 +33,7 @@ const Projects = (props) => {
             ></PCards>
             <PCards
                 pLink="https://nicoabb.github.io/iOS-Calculator/"
-                img={img3}
+                img={img2}
                 htmlLogo={<AiFillHtml5 />}
                 cssLogo={<FaCss3 />}
                 jsLogo={<SiJavascript />}

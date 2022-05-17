@@ -1,10 +1,11 @@
 import styles from "./Cards.module.css";
+import { Link } from "react-router-dom";
 
 const Card = (props) => {
     return (
         <div className={styles.cardContainer}>
             <div className={styles.hoverDiv}>
-                <a href=""></a>
+                <Link className={styles.divLink} to={props.linkTo}></Link>
             </div>
             <div className={styles.card}>
                 <img src={props.image} alt={props.imgAlt} />

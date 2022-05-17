@@ -13,6 +13,7 @@ const ProjectsPrev = (props) => {
             <h3>{props.prevTitle}</h3>
             <div className={styles.cardContainer}>
                 <Card
+                    linkTo="/Projects"
                     image={p1}
                     imgAlt="Triveneco webpage"
                     lang="Languages"
@@ -22,6 +23,7 @@ const ProjectsPrev = (props) => {
                     reactLogo={<FaReact />}
                 />
                 <Card
+                    linkTo="/Projects"
                     image={p2}
                     imgAlt="iOS calculator"
                     lang="Languages"
@@ -31,6 +33,7 @@ const ProjectsPrev = (props) => {
                     reactLogo={null}
                 />
                 <Card
+                    linkTo="/Projects"
                     image={p3}
                     imgAlt="Random webpage"
                     lang="Languages"
