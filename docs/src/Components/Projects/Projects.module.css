@@ -1,4 +1,23 @@
 .proj {
     display: flex;
     flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+.proj h1 {
+    margin: 4rem auto;
+    font-size: 8vw;
+    color: var(--secondary-color);
+}
+
+@media screen and (min-width: 720px) {
+    .proj h1 {
+        font-size: 64px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .proj h1 {
+        font-size: 48px;
+    }
 }

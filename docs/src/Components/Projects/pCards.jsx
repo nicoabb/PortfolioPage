@@ -6,7 +6,9 @@ const PCards = (props) => {
         <div className={styles.pCard}>
             <div className={`${styles.circle} ${styles.c1}`}></div>
             <div className={styles.rectangle}></div>
-            <img src={props.img} alt="Project image" />
+            <a href={props.pLink} target="_blank" rel="noopener noreferrer">
+                <img src={props.img} alt="Project image" />
+            </a>
             <div className={styles.icons}>
                 {props.htmlLogo}
                 {props.cssLogo}
