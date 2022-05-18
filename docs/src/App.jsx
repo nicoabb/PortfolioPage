@@ -6,6 +6,8 @@ import About from "./Pages/About";
 import Projects from "./Pages/Projects";
 import Footer from "./Components/Footer/Footer";
 
+console.log("Im in App");
+
 function App() {
     return (
         <BrowserRouter>

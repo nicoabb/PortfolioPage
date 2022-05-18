@@ -20,6 +20,8 @@ i18next.init({
     },
 });
 
+console.log("Im in main");
+
 ReactDOM.render(
     <React.StrictMode>
         <I18nextProvider i18n={i18next}>
