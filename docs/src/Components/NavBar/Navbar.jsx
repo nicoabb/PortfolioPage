@@ -6,6 +6,7 @@ import { FaLaptopCode, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
 import { IoClose } from "react-icons/io5";
 import { useTranslation } from "react-i18next";
+import resumePdf from "../../../dist/assets/resume_nicolas.pdf";
 
 const NavBar = () => {
     // LANGUAGE
@@ -75,7 +76,12 @@ const NavBar = () => {
                 ) : null}
                 {windowDimension.winWidth > 480 ? (
                     <div className={styles.btns}>
-                        <a href="">
+                        <a  
+                            href={resumePdf}
+                            download="Resume_NicolasBriceno"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             <button>Resume</button>
                         </a>
                         <a
