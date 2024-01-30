@@ -1,113 +1,128 @@
 import styles from "./Carousel.module.css";
 import { useState, useEffect } from "react";
-import img1 from "../../Img/1.jpg";
-import img2 from "../../Img/2.jpg";
-import img3 from "../../Img/3.jpg";
-import img4 from "../../Img/4.jpg";
-import img5 from "../../Img/5.jpg";
+import Card from "../Cards/Cards";
+import img1 from "../../Img/1.png";
+import img2 from "../../Img/2.png";
+import img3 from "../../Img/3.png";
+import img4 from "../../Img/4.png";
+import img5 from "../../Img/5.png";
+import { AiFillHtml5 } from "react-icons/ai";
+import { FaCss3, FaReact } from "react-icons/fa";
+import { SiJavascript } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
+import { FaPython } from "react-icons/fa";
 
-const Carrousel = () => {
-    /* mainImg is img1, the code in general takes the position of img1 as a reference.
-    When the user clicks on an image, mainImg gets added a value, depending on that
-    value the rest of the images move of position */
+const Carrousel = (props) => {
+    let [order1, setOrder1] = useState(1);
+    let [order2, setOrder2] = useState(2);
+    let [order3, setOrder3] = useState(3);
+    let [order4, setOrder4] = useState(4);
+    let [order5, setOrder5] = useState(5);
 
-    let [mainImg, setPosition] = useState(3);
-    // grid is an object with CSS stored
-    let [grid1, setGrid1] = useState({ gridColumn: 3 / 5, order: 7 });
-    let [grid2, setGrid2] = useState({ gridColumn: 4 / 6, order: 5 });
-    let [grid3, setGrid3] = useState({ gridColumn: 5 / 7, order: 3 });
-    let [grid4, setGrid4] = useState({ gridColumn: 1 / 3, order: 3 });
-    let [grid5, setGrid5] = useState({ gridColumn: 2 / 4, order: 5 });
-
-    let spots;
-
-    const checkNum = (num) => {
-        if (num > 5) {
-            num = 1;
-        } else if (num < 1) {
-            num = 5;
-        }
-        return num;
+    const getOpacity = (order) => {
+        switch (order) {
+            case 1:
+            case 5:
+                return 0.4;
+            case 2:
+            case 4:
+                return 0.8;
+            case 3:
+                return 1;
+            default:
+                return 1;
+        }   
     };
 
-    // this is where grid positions are updated
-    const updateStyle = (spot) => {
-        let ord = 1;
-        if (spot === "3 / 5") {
-            ord = 7;
-        } else if (spot === "2 / 4" || spot === "4 / 6") {
-            ord = 5;
-        } else if (spot === "1 / 3" || spot === "5 / 7") {
-            ord = 3;
+    const zIndex = (order) => {
+        switch (order) {
+            case 1:
+            case 5:
+                return 1;
+            case 2:
+            case 4:
+                return 2;
+            case 3:
+                return 3;
+            default:
+                return 1;
         }
-        let grid = {
-            gridColumn: `${spot}`,
-            order: `${ord}`,
-        };
-        return grid;
     };
 
-    /* p stands for position, the position of the img (p1 for img1, p2 for img2...) 
-    spot is position, but in grid-columns, imagine p1 is 3, then spot1 is 3 / 5 */
-    const moveGrid = (spots) => {
-        setPosition(checkNum(mainImg));
-        let p1 = mainImg;
-        const spot1 = `${p1} / ${p1 + 2}`;
-        let p2 = checkNum(p1 + 1);
-        const spot2 = `${p2} / ${p2 + 2}`;
-        let p3 = checkNum(p2 + 1);
-        const spot3 = `${p3} / ${p3 + 2}`;
-        let p4 = checkNum(p3 + 1);
-        const spot4 = `${p4} / ${p4 + 2}`;
-        let p5 = checkNum(p4 + 1);
-        const spot5 = `${p5} / ${p5 + 2}`;
-        spots = [spot1, spot2, spot3, spot4, spot5];
-        return spots;
+    const moveGrid = () => {
+        setOrder1((order1 % 5) + 1);
+        setOrder2((order2 % 5) + 1);
+        setOrder3((order3 % 5) + 1);
+        setOrder4((order4 % 5) + 1);
+        setOrder5((order5 % 5) + 1);
     };
 
     useEffect(() => {
-        spots = moveGrid(spots);
-        setGrid1(updateStyle(spots[0]));
-        setGrid2(updateStyle(spots[1]));
-        setGrid3(updateStyle(spots[2]));
-        setGrid4(updateStyle(spots[3]));
-        setGrid5(updateStyle(spots[4]));
-    }, [mainImg]);
-
-    /* TIMER LOGIC */
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setPosition(mainImg + 1);
-        }, 7000);
+        const interval = setInterval(moveGrid, 7000);
         return () => clearInterval(interval);
-    }, [mainImg]);
+    }, [order1, order2, order3, order4, order5]);
 
     return (
         <section className={styles.container}>
+            <h3>{props.prevTitle}</h3>
             <div className={styles.carrousel}>
-                <img id={styles["p1"]} src={img1} alt="Photo 1" style={grid1} />
-                <span
-                    className={styles.p2Layer}
-                    onClick={() => setPosition(mainImg - 1)}
-                ></span>
-                <img id={styles["p2"]} src={img2} alt="Photo 2" style={grid2} />
-                <span
-                    className={styles.p5Layer}
-                    onClick={() => setPosition(mainImg + 1)}
-                ></span>
-                <img id={styles["p5"]} src={img5} alt="Photo 5" style={grid5} />
-                <span
-                    className={styles.p3Layer}
-                    onClick={() => setPosition(mainImg - 2)}
-                ></span>
-                <img id={styles["p3"]} src={img3} alt="Photo 3" style={grid3} />
-                <span
-                    className={styles.p4Layer}
-                    onClick={() => setPosition(mainImg + 2)}
-                ></span>
-                <img id={styles["p4"]} src={img4} alt="Photo 4" style={grid4} />
+                <div style={{order: order1, zIndex: zIndex(order1)}}>
+                    <Card
+                        linkTo="/Projects"
+                        image={img2}
+                        imgAlt="Proyecto 1 EDD"
+                        lang={props.lang}
+                        javaLogo={<FaJava />}
+                        extraStyle={{opacity: getOpacity(order1)}}
+                    />
+                </div>
+                <div style={{order: order2, zIndex: zIndex(order2)}}>
+                    <Card
+                        linkTo="/Projects"
+                        image={img5}
+                        imgAlt="iOS Calculator"
+                        lang={props.lang}
+                        htmlLogo={<AiFillHtml5 />}
+                        cssLogo={<FaCss3 />}
+                        jsLogo={<SiJavascript />}
+                        extraStyle={{opacity: getOpacity(order2)}}
+                    />
+                </div>
+                <div style={{order: order3, zIndex: zIndex(order3)}}>
+                    <Card
+                        linkTo="/Projects"
+                        image={img3}
+                        imgAlt="Proyecto 2 EDD"
+                        lang={props.lang}
+                        javaLogo={<FaJava />}
+                        extraStyle={{opacity: getOpacity(order3)}}
+                    />
+                </div>
+                <div style={{order: order4, zIndex: zIndex(order4)}}>
+                    <Card
+                        linkTo="/Projects"
+                        image={img1}
+                        imgAlt="Trabajo de grado"
+                        lang={props.lang}
+                        htmlLogo={<AiFillHtml5 />}
+                        cssLogo={<FaCss3 />}
+                        jsLogo={<SiJavascript />}
+                        reactLogo={<FaReact />}
+                        pythonLogo={<FaPython />}
+                        extraStyle={{opacity: getOpacity(order4)}}
+                    />
+                </div>
+                <div style={{order: order5, zIndex: zIndex(order5)}}>
+                    <Card
+                        linkTo="/Projects"
+                        image={img4}
+                        imgAlt="Proyecto 1 SO"
+                        lang={props.lang}
+                        javaLogo={<FaJava />}
+                        extraStyle={{opacity: getOpacity(order5)}}
+                    />
+                </div>
             </div>
-            <div className={styles.line}></div>
         </section>
     );
 };

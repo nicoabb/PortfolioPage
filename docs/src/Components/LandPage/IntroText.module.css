@@ -12,6 +12,9 @@
     margin: auto;
     order: 7;
 }
+.intro .line:first-of-type {
+    margin-top: 3rem;
+}
 .intro h1 {
     color: var(--secondary-color);
 }

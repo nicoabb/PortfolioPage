@@ -1,6 +1,5 @@
 import Carousel from "../Components/LandPage/Carousel";
 import IntroText from "../Components/LandPage/IntroText";
-import ProjectsPrev from "../Components/LandPage/ProjectsPrev";
 import { useTranslation } from "react-i18next";
 
 const LandPage = () => {
@@ -8,13 +7,12 @@ const LandPage = () => {
 
     return (
         <div>
-            <Carousel />
             <IntroText
                 hi={t("landpage.hi")}
                 code={t("landpage.iDo")}
                 currently={t("landpage.current")}
             />
-            <ProjectsPrev
+            <Carousel 
                 prevTitle={t("landpage.iMade")}
                 lang={t("landpage.langUsed")}
             />

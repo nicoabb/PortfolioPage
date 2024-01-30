@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Card = (props) => {
     return (
-        <div className={styles.cardContainer}>
+        <div className={styles.cardContainer} style={props.extraStyle}>
             <div className={styles.hoverDiv}>
                 <Link className={styles.divLink} to={props.linkTo}></Link>
             </div>
@@ -15,6 +15,8 @@ const Card = (props) => {
                     {props.cssLogo}
                     {props.jsLogo}
                     {props.reactLogo}
+                    {props.javaLogo}
+                    {props.pythonLogo}
                 </div>
             </div>
         </div>
