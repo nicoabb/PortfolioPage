@@ -1,0 +1,62 @@
+
+.coding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #2e2e4b;
+}
+.coding .langContainer {
+    margin: 2rem auto 0;
+    width: 86%;
+    max-width: 920px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.coding .square {
+    width: 7rem;
+    height: 7rem;
+    background-color: var(--primary-color-300);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.3rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.coding .square h4 {
+    font-size: 16px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+.coding .square p {
+    margin: 0 auto;
+    font-weight: 250;
+    color: var(--neutral-color);
+}
+.coding .icons {
+    display: flex;
+    margin: 0 auto;
+    gap: 0.4rem;
+    color: var(--secondary-color);
+}
+
+.coding .icons svg {
+    width: 2em;
+    height: 2em;
+}
+.coding .text {
+    margin: auto;
+    text-align: left;
+    width: 86%;
+    max-width: 920px;
+}
+.coding p {
+    margin: 1rem auto;
+    font-weight: 500;
+    color: var(--neutral-color);
+}
+
+.coding h3 {
+    color: var(--neutral-color);
+    font-size: 2.5rem;
+}

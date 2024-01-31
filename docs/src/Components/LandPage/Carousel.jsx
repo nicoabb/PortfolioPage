@@ -58,7 +58,7 @@ const Carrousel = (props) => {
     };
 
     useEffect(() => {
-        const interval = setInterval(moveGrid, 7000);
+        const interval = setInterval(moveGrid, 4000);
         return () => clearInterval(interval);
     }, [order1, order2, order3, order4, order5]);
 

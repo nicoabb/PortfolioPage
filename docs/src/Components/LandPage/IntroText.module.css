@@ -1,7 +1,7 @@
 .intro {
     width: 86%;
     max-width: 920px;
-    margin: auto;
+    margin: 3rem auto;
 }
 .intro .line {
     grid-column: 1;
@@ -9,11 +9,8 @@
     width: 100%;
     max-width: 920px;
     justify-self: end;
-    margin: auto;
+    margin: 3rem auto 0;
     order: 7;
-}
-.intro .line:first-of-type {
-    margin-top: 3rem;
 }
 .intro h1 {
     color: var(--secondary-color);
@@ -31,13 +28,25 @@
 .intro p:last-of-type {
     margin: 1rem 0 3rem;
 }
+.intro .container {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+}
+.intro img {
+    grid-column: 1;
+}
+.intro .text {
+    grid-column: 2;
+    margin-left: 2rem;
+}
 
 @media screen and (min-width: 721px) {
     .intro h1 {
         font-size: 4rem;
     }
     .intro h2 {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
     .intro p {
         font-size: 1rem;
@@ -70,6 +79,6 @@
         font-size: 3.2rem;
     }
     .intro h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }

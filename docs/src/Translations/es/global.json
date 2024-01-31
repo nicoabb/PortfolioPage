@@ -5,10 +5,13 @@
     },
     "landpage": {
         "hi": "Hola, mi nombre es",
-        "iDo": "Programo la web",
-        "current": "Actualmente estudio ingeniería de sistemas, siempre listo para aprender más. Me encanta el desarrollo web, en especial el área de frontend.",
-        "iMade": "Proyectos hechos hasta ahora",
-        "langUsed": "Lenguajes"
+        "iDo": "Ingeniero de Sistemas",
+        "current": "Siempre listo para aprender y enfrentarme a nuevos retos. Si bien el área de frontend es mi fuerte, me mantengo con la mente abierta a diferentes enfoques de desarrollo.",
+        "iMade": "Algunos de mis proyectos",
+        "langUsed": "Lenguajes",
+        "codeTitle": "Lenguajes de programación",
+        "codeText": "La carrera me dio la oportunidad de enfrentarme a todos ellos, no me considero experto en ninguno, pero puedo decir con seguridad que aprendo rápido y me adapto fácilmente a las herramientas necesarias para el cumplimiento del proyecto.",
+        "projects": "proyectos"
     },
     "about": {
         "title": "Acerca de mí",
