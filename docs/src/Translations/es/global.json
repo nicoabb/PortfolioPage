@@ -15,11 +15,10 @@
     },
     "about": {
         "title": "Acerca de mí",
-        "firstP": "Formado como líder, he tenido diferentes oportunidades que me han permitido convertirme en la persona que soy hoy. Estratégico, maximizador, disciplinado, creativo y feliz son algunas de las palabras que utilizo para describirme, son la guía para pensar y actuar de la manera en que lo hago.",
-        "secondP": "Decidí estudiar Ingeniería de Sistemas para poder desarrollar mis propias ideas y no tener límites a la hora de trabajar. Pienso de la programación de la misma manera que lo hacía al armar Lego cuando era pequeño, solo se necesita la inspiración, motivación, y los bloques necesarios para hacer cosas increíbles, solo que ahora puedo crear mis propios bloques.",
-        "thirdP": "Trabajo con Python, Java, HTML, CSS, JavaScript y React. Si debo decir en cuál soy mejor, CSS sería la respuesta, pero en general soy muy bueno con el área de frontend.",
-        "more": "Si quiere saber más acerca de mí,",
-        "click": "visite mi página de LinkedIn"
+        "firstP": "Mi camino ha estado lleno de oportunidades que han fortalecido mi liderazgo y han sido fundamentales en mi desarrollo personal y profesional. Me considero una persona estratégica, enfocada en maximizar resultados, disciplinada y creativa. Estos atributos no solo me definen, sino que también orientan mi pensamiento y mis acciones.",
+        "secondP": "Estudiar Ingeniería de Sistemas surgió de mi deseo de dar vida a mis propias ideas sin limitaciones. Veo la programación de la misma manera que veía el armado de Lego cuando era pequeño: con la inspiración, dedicación y los bloques correctos, se pueden crear cosas increíbles.",
+        "thirdP": "He trabajado con diversos lenguajes de programación, así como con aplicaciones low-code como Airtable y Claris Filemaker. Siempre con la mente abierta a nuevas tecnologías, me adapto rápidamente para poder garantizar la entrega de productos de calidad.",
+        "sendEmail": "Enviar correo"
     },
     "projects": {
         "title": "Proyectos",

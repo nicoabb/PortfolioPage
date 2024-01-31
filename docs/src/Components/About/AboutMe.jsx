@@ -2,32 +2,26 @@ import styles from "./AboutMe.module.css";
 
 const AboutMe = (props) => {
     return (
-        <section className={styles.ASection}>
-            <h1>{props.title}</h1>
-            <img
-                src={props.img1}
-                alt="Imagen portada"
-                className={styles.imgIntro}
-            />
-            <div className={styles.lines}></div>
-            {props.aboutText}
-            <div className={styles.lines}></div>
-            <div className={styles.imgContainer}>
-                <img
-                    src={props.img2}
-                    alt="Imagen 1"
-                    className={styles.imgSquare}
-                />
-                <img
-                    src={props.img3}
-                    alt="Imagen 2"
-                    className={`${styles.imgSquare} ${styles.horizontalImg}`}
-                />
-                <img
-                    src={props.img4}
-                    alt="Imagen 3"
-                    className={styles.imgSquare}
-                />
+        <section className={styles.aSection}>
+            <div className={styles.imgBox}>
+                <div className={styles.niceLine}></div>
+                <img src={props.img1} alt={props.imgAlt} />
+            </div>
+            <div className={styles.textBox}>
+                <h1>{props.title}</h1>
+                {props.aboutText}
+                <div className={styles.btnBox}>
+                    <a  
+                            href="https://linkedin.com/in/nicoabb"
+                            target="_blank"
+                            rel="noreferrer"
+                    >
+                        <button>LinkedIn</button>
+                    </a>
+                    <a href="mailto:nicolasbricenob@gmail.com">
+                        <button className={styles.btnEmail}>{props.sendEmail}</button>
+                    </a>
+                </div>
             </div>
         </section>
     );
