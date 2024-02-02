@@ -5,7 +5,7 @@ const Card = (props) => {
     return (
         <div className={styles.cardContainer} style={props.extraStyle}>
             <div className={styles.hoverDiv}>
-                <Link className={styles.divLink} to={props.linkTo}></Link>
+                <Link className={styles.divLink} to={`${props.linkTo}#${props.projectId}`}></Link>
             </div>
             <div className={styles.card}>
                 <img src={props.image} alt={props.imgAlt} />

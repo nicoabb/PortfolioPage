@@ -18,7 +18,7 @@ const PCards = (props) => {
                     >
                         <button>{props.view}</button>
                     </a>
-                    {props.web}
+                    {props.secondBtn}
                 </div>
             </div>
         </div>

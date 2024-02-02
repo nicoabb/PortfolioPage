@@ -10,11 +10,11 @@ import { useTranslation } from "react-i18next";
 const Projects = (props) => {
     const [t, i18n] = useTranslation("global");
     const projects = [
-        {image: img1, name: "Triveneco", desc: t("projects.firstDesc")},
-        {image: img2, name: "Triveneco", desc: t("projects.secondDesc")},
-        {image: img3, name: "Triveneco", desc: t("projects.secondDesc")},
-        {image: img4, name: "Triveneco", desc: t("projects.secondDesc")},
-        {image: img5, name: "Triveneco", desc: t("projects.secondDesc")}
+        {image: img1, name: "Trabajo de grado", desc: t("projects.oneDesc"), url: "https://github.com/nicoabb/F4_Front_Tesis", view: t("projects.viewf"), extraView: t("projects.viewb"), secondButton: true, extraUrl: "https://github.com/nicoabb/F4_Back_Tesis"},
+        {image: img2, name: "Estructura de Datos P1", desc: t("projects.twoDesc"), url: "https://github.com/nicoabb/Proyecto1_EDD", view: t("projects.view"), secondButton: false},
+        {image: img3, name: "Estructura de Datos P2", desc: t("projects.threeDesc"), url: "https://github.com/nicoabb/Proyecto2_EDD", view: t("projects.view"), secondButton: false},
+        {image: img4, name: "Sistemas Operativos P1", desc: t("projects.fourDesc"), url: "https://github.com/nicoabb/Proyecto1_SO", view: t("projects.view"), secondButton: false},
+        {image: img5, name: "iOS Calculator", desc: t("projects.fiveDesc"), url: "https://github.com/nicoabb/iOS-Calculator", view: t("projects.view"), extraView: t("projects.web"), secondButton: true, extraUrl: "https://nicoabb.github.io/iOS-Calculator/"}
     ];
 
     return (
@@ -22,6 +22,7 @@ const Projects = (props) => {
             <h1>{t("projects.title")}</h1>
             {projects.map((project, index) => (
                 <div 
+                    id={`p${index}`}
                     className={styles.cardBox} 
                     style={{
                         backgroundColor: index % 2 === 0 ? "var(--primary-color-200)" : "var(--primary-color-150)"
@@ -31,8 +32,24 @@ const Projects = (props) => {
                         image={project.image}
                         name={project.name}
                         desc={project.desc}
-                        view={t("projects.view")}
-                        extraStyle={{flexDirection: index % 2 === 0 ? "row-reverse" : "row"}}
+                        url={project.url}
+                        view={project.view}
+                        extraStyle={{flexDirection: index % 2 === 0 ? "row" : "row-reverse"}}
+                        secondBtn={ project.secondButton && 
+                            <>
+                                <a 
+                                    href={project.extraUrl}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <button style={{
+                                        backgroundColor: "var(--primary-color-100)",
+                                        border: "3px solid var(--primary-color-300)",
+                                        color: "var(--neutral-color)"
+                                    }}>{project.extraView}</button>
+                                </a>
+                            </>
+                        }
                     ></PCards>
                 </div>
             ))}

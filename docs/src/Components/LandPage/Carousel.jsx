@@ -68,6 +68,7 @@ const Carrousel = (props) => {
             <div className={styles.carrousel}>
                 <div style={{order: order1, zIndex: zIndex(order1)}}>
                     <Card
+                        projectId="p1"
                         linkTo="/Projects"
                         image={img2}
                         imgAlt="Proyecto 1 EDD"
@@ -78,6 +79,7 @@ const Carrousel = (props) => {
                 </div>
                 <div style={{order: order2, zIndex: zIndex(order2)}}>
                     <Card
+                        projectId="p4"
                         linkTo="/Projects"
                         image={img5}
                         imgAlt="iOS Calculator"
@@ -90,6 +92,7 @@ const Carrousel = (props) => {
                 </div>
                 <div style={{order: order3, zIndex: zIndex(order3)}}>
                     <Card
+                        projectId="p2"
                         linkTo="/Projects"
                         image={img3}
                         imgAlt="Proyecto 2 EDD"
@@ -100,6 +103,7 @@ const Carrousel = (props) => {
                 </div>
                 <div style={{order: order4, zIndex: zIndex(order4)}}>
                     <Card
+                        projectId="p0"
                         linkTo="/Projects"
                         image={img1}
                         imgAlt="Trabajo de grado"
@@ -114,6 +118,7 @@ const Carrousel = (props) => {
                 </div>
                 <div style={{order: order5, zIndex: zIndex(order5)}}>
                     <Card
+                        projectId="p3"
                         linkTo="/Projects"
                         image={img4}
                         imgAlt="Proyecto 1 SO"

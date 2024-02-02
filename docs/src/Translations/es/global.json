@@ -23,9 +23,14 @@
     "projects": {
         "title": "Proyectos",
         "view": "Ver en GitHub",
-        "firstDesc": "Este proyecto está inspirado en Booking, una plataforma de viajes. Hecho en equipo, estuve encargado del estilo y responsive del proyecto.",
-        "secondDesc": "Esta fue mi primera página web creada, con la que pude practicar las cosas que sabía de HTML y CSS en aquel momento.",
-        "thirdDesc": "Luego de la Random Page, necesitaba practicar JS, así que hice una calculadora básica que se viera y funcionara bien."
+        "viewf": "Ver frontend",
+        "viewb": "Ver backend",
+        "web": "Ver página web",
+        "oneDesc": "Desarrollado con la librería de ReactJS para el frontend, y Python para el backend. Este proyecto tuvo como objetivo finalizar el desarrollo de un prototipo para la generación de arquitecturas de referencia a través del análisis de variabilidad. Fue el trabajo de grado y cierre de la carrera de Ingeniería de Sistemas.",
+        "twoDesc": "Desarrollado en Java. El proyecto consistió en desarrollar una aplicación para una empresa de envíos. Se dio cierre al estudio de estructuras como pilas y grafos, así como a los algoritmos BFS, DFS y Dijkstra.",
+        "threeDesc": "Desarrollado en Java. El proyecto consistió en desarrollar  un programa que simule una cola de impresión utilizando el TDA Montículo Binario. Se dio cierre al estudio de estructuras como colas, árboles y hash tables.",
+        "fourDesc": "Desarrollado en Java. Este proyecto tuvo como objetivo realizar unas simulaciones de la línea de producción de dos series animadas y comparar rendimiento a través de un Dashboard. Con esto se practicaron funcionalidades de hilos (threads), semáforos y soluciones de tipo productor/consumidor. ",
+        "fiveDesc": "Desarrollado con Javascript, HTML y CSS. El proyecto fue realizado como parte del curso 'Complete Intro to Web Development, v3' de Frontend Masters, en el cual se dieron las bases para el desarrollo web con los lenguajes mencionados. Es una calculadora sencilla, con una interfaz que hace referencia a la de iOS."
     },
     "footer": {
         "contact": "Contáctame",
