@@ -10,11 +10,11 @@ import { useTranslation } from "react-i18next";
 const Projects = (props) => {
     const [t, i18n] = useTranslation("global");
     const projects = [
-        {image: img1, name: "Trabajo de grado", desc: t("projects.oneDesc"), url: "https://github.com/nicoabb/F4_Front_Tesis", view: t("projects.viewf"), extraView: t("projects.viewb"), secondButton: true, extraUrl: "https://github.com/nicoabb/F4_Back_Tesis"},
-        {image: img2, name: "Estructura de Datos P1", desc: t("projects.twoDesc"), url: "https://github.com/nicoabb/Proyecto1_EDD", view: t("projects.view"), secondButton: false},
-        {image: img3, name: "Estructura de Datos P2", desc: t("projects.threeDesc"), url: "https://github.com/nicoabb/Proyecto2_EDD", view: t("projects.view"), secondButton: false},
-        {image: img4, name: "Sistemas Operativos P1", desc: t("projects.fourDesc"), url: "https://github.com/nicoabb/Proyecto1_SO", view: t("projects.view"), secondButton: false},
-        {image: img5, name: "iOS Calculator", desc: t("projects.fiveDesc"), url: "https://github.com/nicoabb/iOS-Calculator", view: t("projects.view"), extraView: t("projects.web"), secondButton: true, extraUrl: "https://nicoabb.github.io/iOS-Calculator/"}
+        {image: img1, name: t("projects.oneTitle"), desc: t("projects.oneDesc"), url: "https://github.com/nicoabb/F4_Front_Tesis", view: t("projects.viewf"), extraView: t("projects.viewb"), secondButton: true, extraUrl: "https://github.com/nicoabb/F4_Back_Tesis"},
+        {image: img2, name: t("projects.twoTitle"), desc: t("projects.twoDesc"), url: "https://github.com/nicoabb/Proyecto1_EDD", view: t("projects.view"), secondButton: false},
+        {image: img3, name: t("projects.threeTitle"), desc: t("projects.threeDesc"), url: "https://github.com/nicoabb/Proyecto2_EDD", view: t("projects.view"), secondButton: false},
+        {image: img4, name: t("projects.fourTitle"), desc: t("projects.fourDesc"), url: "https://github.com/nicoabb/Proyecto1_SO", view: t("projects.view"), secondButton: false},
+        {image: img5, name: t("projects.fiveTitle"), desc: t("projects.fiveDesc"), url: "https://github.com/nicoabb/iOS-Calculator", view: t("projects.view"), extraView: t("projects.web"), secondButton: true, extraUrl: "https://nicoabb.github.io/iOS-Calculator/"}
     ];
 
     return (
