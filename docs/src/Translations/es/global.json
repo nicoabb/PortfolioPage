@@ -22,6 +22,7 @@
     },
     "projects": {
         "title": "Proyectos",
+        "view": "Ver en GitHub",
         "firstDesc": "Este proyecto está inspirado en Booking, una plataforma de viajes. Hecho en equipo, estuve encargado del estilo y responsive del proyecto.",
         "secondDesc": "Esta fue mi primera página web creada, con la que pude practicar las cosas que sabía de HTML y CSS en aquel momento.",
         "thirdDesc": "Luego de la Random Page, necesitaba practicar JS, así que hice una calculadora básica que se viera y funcionara bien."
