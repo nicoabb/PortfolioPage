@@ -5,28 +5,37 @@
     },
     "landpage": {
         "hi": "Hi, my name is",
-        "iDo": "I code the web",
-        "current": "Currently studing software engineering, always ready to learn more. I love web development, specially the frontend area.",
-        "iMade": "Projects I've made so far",
-        "langUsed": "Languages"
+        "iDo": "System Engineer",
+        "current": "Always ready to learn and face new challenges. While frontend is my strength, I keep an open mind to different development approaches.",
+        "iMade": "Some of my projects",
+        "langUsed": "Languages",
+        "codeTitle": "Programming Languages",
+        "codeText": "Academic training gave me the opportunity to explore various languages, although I do not consider myself an expert, I am confident that I learn the necessary tools for project completion quickly.",
+        "projects": "projects"
     },
     "about": {
         "title": "About Me",
-        "firstP": "Growing up as a leader, I’ve had different opportunities that allowed me to become the person I am today. Strategic, maximizer, disciplined, creative and happy are some of the words I use to describe myself, they’re my guide to think and act the way I do.",
-        "secondP": "I decided to study Software Engineering so I can build my own ideas and have no limits when it comes to work. I think of programming the way I thought of building Lego when I was a kid, you just need the inspiration, motivation, and the necessary blocks to do amazing things, but now I get to create my own blocks.",
-        "thirdP": "I work with Python, Java, HTML, CSS, JavaScript, and React. If I must tell in which I’m better, CSS would be the answer, but in general I’m really good with the frontend area.",
-        "more": "If you want to know more about me,",
-        "click": "checkout my LinkedIn page."
+        "firstP": "My journey has been filled with opportunities that have strengthened my leadership and have been fundamental in my personal and professional development. I consider myself a strategic person, focused on maximizing results, disciplined, and creative. These attributes not only define me, but also guide my thinking and actions.",
+        "secondP": "Studying Systems Engineering arose from my desire to bring my own ideas to life without limitations. I see programming in the same way I saw Lego building when I was little: with inspiration, dedication, and the right blocks, you can create incredible things.",
+        "thirdP": "I have worked with various programming languages, as well as with low-code applications like Airtable and Claris Filemaker. Always open-minded to new technologies, I adapt quickly to ensure the delivery of quality products.",
+        "sendEmail": "Send an email"
     },
     "projects": {
         "title": "Projects",
-        "firstDesc": "This project is inspired in Booking, a platform made for traveling. Made with a team, I was in charge of the style and responsiveness of the project.",
-        "secondDesc": "This was my first webpage made, where I practice the things I knew at the time with HTML and CSS.",
-        "thirdDesc": "After the Random Page, I needed to practice JS, so I made a basic calculator that looks good and works good."
+        "view": "See GitHub",
+        "viewf": "See frontend",
+        "viewb": "See backend",
+        "web": "See website",
+        "oneDesc": "Developed with the ReactJS library for the frontend, and Python for the backend. This project aimed to finalize the development of a prototype for generating reference architectures through variability analysis. It was the degree work and closure of the Systems Engineering career.",
+        "twoDesc": "Developed in Java. The project consisted of developing an application for a shipping company. It concluded the study of structures such as stacks and graphs, as well as BFS, DFS, and Dijkstra algorithms.",
+        "threeDesc": "Developed in Java. The project consisted of developing a program that simulates a print queue using the Binary Heap ADT. It concluded the study of structures such as queues, trees, and hash tables.",
+        "fourDesc": "Developed in Java. This project aimed to perform simulations of the production line of two animated series and compare performance through a Dashboard. With this, thread functionalities, semaphores, and producer/consumer type solutions were practiced.",
+        "fiveDesc": "Developed with Javascript, HTML, and CSS. The project was carried out as part of the ‘Complete Intro to Web Development, v3’ course from Frontend Masters, in which the basics for web development with the mentioned languages were given. It is a simple calculator, with an interface that references that of iOS."
     },
     "footer": {
         "contact": "Contact me",
         "made": "Made with React",
+        "linkedin": "LinkedIn profile",
         "rights": "All rights reserved"
     }
 }
