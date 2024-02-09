@@ -27,7 +27,7 @@
         "viewb": "See backend",
         "web": "See website",
         "oneTitle": "Degree Final Project",
-        "oneDesc": "Developed with the ReactJS library for the frontend, and Python for the backend. This project aimed to finalize the development of a prototype for generating reference architectures through variability analysis. It was the degree work and closure of the Systems Engineering career.",
+        "oneDesc": "Developed with the ReactJS library for the frontend, and Python for the backend. This project aimed to finalize the development of a prototype for generating reference architectures through variability analysis. It was the degree final project and closure of the career.",
         "twoTitle": "Data Structures P1",
         "twoDesc": "Developed in Java. The project consisted of developing an application for a shipping company. It concluded the study of structures such as stacks and graphs, as well as BFS, DFS, and Dijkstra algorithms.",
         "threeTitle": "Data Structures P2",
@@ -35,7 +35,7 @@
         "fourTitle": "Operating Systems P1",
         "fourDesc": "Developed in Java. This project aimed to perform simulations of the production line of two animated series and compare performance through a Dashboard. With this, thread functionalities, semaphores, and producer/consumer type solutions were practiced.",
         "fiveTitle": "iOS Calculator",
-        "fiveDesc": "Developed with Javascript, HTML, and CSS. The project was carried out as part of the ‘Complete Intro to Web Development, v3’ course from Frontend Masters, in which the basics for web development with the mentioned languages were given. It is a simple calculator, with an interface that references that of iOS."
+        "fiveDesc": "Developed with Javascript, HTML, and CSS. The project was carried out as part of the ‘Complete Intro to Web Development, v3’ course from Frontend Masters, in which the basics for web development were given. It is a simple calculator, with an interface that references that of iOS."
     },
     "footer": {
         "contact": "Contact me",

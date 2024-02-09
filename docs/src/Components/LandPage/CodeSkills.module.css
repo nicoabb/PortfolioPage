@@ -1,6 +1,4 @@
-
 .coding {
-    padding-top: 4rem;
     padding-bottom: 4rem;
     background-color: var(--primary-color-150);
 }
@@ -8,13 +6,8 @@
     margin: 2rem auto 0;
     width: 86%;
     max-width: 920px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 .coding .square {
-    width: 7rem;
-    height: 7rem;
     background-color: var(--primary-color-300);
     display: flex;
     justify-content: center;
@@ -24,7 +17,6 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .coding .square h4 {
-    font-size: 16px;
     color: var(--secondary-color);
     text-transform: uppercase;
 }
@@ -39,16 +31,14 @@
     gap: 0.4rem;
     color: var(--secondary-color);
 }
-
-.coding .icons svg {
-    width: 2em;
-    height: 2em;
-}
 .coding .text {
     margin: auto;
     text-align: left;
     width: 86%;
     max-width: 920px;
+}
+.coding h3 {
+    color: var(--neutral-color);
 }
 .coding p {
     margin: 1rem auto;
@@ -56,7 +46,103 @@
     color: var(--neutral-color);
 }
 
-.coding h3 {
-    color: var(--neutral-color);
-    font-size: 2.5rem;
+@media screen and (min-width: 280px) {
+    .coding {
+        padding-top: 3rem;
+    }
+    .coding .langContainer {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 1rem;
+        justify-content: space-evenly;
+    }
+    .coding .square {
+        width: 45%;
+        min-width: 7rem;
+        height: 7rem;
+    }
+    .coding .square:last-of-type {
+        width: 93%;
+    }
+    .coding .icons svg {
+        width: 2em;
+        height: 2em;
+    }
+    .coding .text {
+        text-align: center;
+    }
+    .coding h3 {
+        font-size: 2rem;
+    }
+    .coding .square h4 {
+        font-size: 16px;
+    }
+    .coding .square p {
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 720px) {
+    .coding {
+        padding-top: 4rem;
+    }
+    .coding .langContainer {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 1rem;
+        justify-content: space-between;
+    }
+    .coding .square {
+        width: 11vw;
+        height: 11vw;
+        min-width: 0;
+        max-width: 7rem;
+        max-height: 7rem;
+    }
+    .coding .square:last-of-type {
+        width: 11vw;
+    }
+    .coding .icons svg {
+        width: 3vw;
+        height: 3vw;
+        max-width: 2em;
+        max-height: 2em;
+    }
+    .coding .text {
+        text-align: left;
+    }
+    .coding h3 {
+        font-size: 2rem;
+    }
+    .coding .square h4 {
+        font-size: calc(9px + 0.5vw);
+    }
+    .coding .square p {
+        font-weight: 250;
+        font-size: calc(9px + 0.5vw);
+    }
+}
+@media screen and (min-width: 1024px) {
+    .coding .langContainer {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 1rem;
+        justify-content: space-between;
+    }
+    .coding .square {
+        width: 7rem;
+        height: 7rem;
+    }
+    .coding .icons svg {
+        width: 2em;
+        height: 2em;
+    }
+    .coding h3 {
+        font-size: 2rem;
+    }
+    .coding .square h4 {
+        font-size: 16px;
+    }
+    .coding .square p {
+        font-size: 16px;
+    }
 }

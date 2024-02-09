@@ -27,7 +27,7 @@
         "viewb": "Ver backend",
         "web": "Ver página web",
         "oneTitle": "Trabajo de grado",
-        "oneDesc": "Desarrollado con la librería de ReactJS para el frontend, y Python para el backend. Este proyecto tuvo como objetivo finalizar el desarrollo de un prototipo para la generación de arquitecturas de referencia a través del análisis de variabilidad. Fue el trabajo de grado y cierre de la carrera de Ingeniería de Sistemas.",
+        "oneDesc": "Desarrollado con la librería de ReactJS para el frontend, y Python para el backend. Este proyecto tuvo como objetivo finalizar el desarrollo de un prototipo para la generación de arquitecturas de referencia a través del análisis de variabilidad. Fue el trabajo de grado y cierre de la carrera.",
         "twoTitle": "Estructuras de Datos P1",
         "twoDesc": "Desarrollado en Java. El proyecto consistió en desarrollar una aplicación para una empresa de envíos. Se dio cierre al estudio de estructuras como pilas y grafos, así como a los algoritmos BFS, DFS y Dijkstra.",
         "threeTitle": "Estructuras de Datos P2",
@@ -35,7 +35,7 @@
         "fourTitle": "Sistemas Operativos P1",
         "fourDesc": "Desarrollado en Java. Este proyecto tuvo como objetivo realizar unas simulaciones de la línea de producción de dos series animadas y comparar rendimiento a través de un Dashboard. Con esto se practicaron funcionalidades de hilos (threads), semáforos y soluciones de tipo productor/consumidor.",
         "fiveTitle": "Calculadora iOS",
-        "fiveDesc": "Desarrollado con Javascript, HTML y CSS. El proyecto fue realizado como parte del curso 'Complete Intro to Web Development, v3' de Frontend Masters, en el cual se dieron las bases para el desarrollo web con los lenguajes mencionados. Es una calculadora sencilla, con una interfaz que hace referencia a la de iOS."
+        "fiveDesc": "Desarrollado con Javascript, HTML y CSS. El proyecto fue realizado como parte del curso 'Complete Intro to Web Development, v3' de Frontend Masters, en el cual se dieron las bases para el desarrollo web. Es una calculadora sencilla, con una interfaz que hace referencia a la de iOS."
     },
     "footer": {
         "contact": "Contáctame",
