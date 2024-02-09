@@ -56,32 +56,32 @@
 
 @media screen and (min-width: 280px) {
     .cardContainer .card {
-        width: 60vw;
-        height: 90vw;
+        width: 45vw;
+        height: 75vw;
         max-width: 10rem;
         max-height: 15rem;
         border: 3px solid var(--primary-color-200);
         padding-bottom: 0.5rem;
     }
     .cardContainer .hoverDiv {
-        width: 60vw;
-        height: 90vw;
+        width: 45vw;
+        height: 75vw;
         max-width: 10rem;
         max-height: 15rem;
     }
     .card img {
-        width: 45vw;
-        height: 45vw;
+        width: 35vw;
+        height: 35vw;
         max-width: 130px;
         max-height: 130px;
         margin-top: 1.5rem;
     }
     .card .icons svg {
-        width: 1.2em;
-        height: 1.2em;
+        width: 1.15em;
+        height: 1.15em;
     }
     .card h4 {
-        font-size: 19px;
+        font-size: 18px;
     }
 }
 @media screen and (min-width: 720px) {

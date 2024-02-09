@@ -38,10 +38,6 @@
         width: 86%;
         max-width: 920px;
     }
-    .carrousel {
-        width: 86%;
-        max-width: 870px; /* 871 px */
-    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -51,5 +47,7 @@
     }
     .carrousel {
         width: 86%;
+        max-width: 870px; /* 871 px */
+
     }
 }
