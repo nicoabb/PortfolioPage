@@ -68,11 +68,13 @@
         width: 2em;
         height: 2em;
     }
-    .coding .text {
-        text-align: center;
+    .coding p {
+        text-align: justify;
+        margin: 1.5rem 0;
     }
     .coding h3 {
         font-size: 2rem;
+        text-align: center;
     }
     .coding .square h4 {
         font-size: 16px;
@@ -107,11 +109,9 @@
         max-width: 2em;
         max-height: 2em;
     }
-    .coding .text {
-        text-align: left;
-    }
     .coding h3 {
         font-size: 2rem;
+        text-align: left;
     }
     .coding .square h4 {
         font-size: calc(9px + 0.5vw);

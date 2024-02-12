@@ -7,10 +7,9 @@ const AboutMe = (props) => {
                 <div className={styles.niceLine}></div>
                 <img src={props.img1} alt={props.imgAlt} />
             </div>
-            <div className={styles.textBox}>
-                <h1>{props.title}</h1>
-                {props.aboutText}
-                <div className={styles.btnBox}>
+            <h1>{props.title}</h1>
+            {props.aboutText}
+            <div className={styles.btnBox}>
                     <a  
                             href="https://linkedin.com/in/nicoabb"
                             target="_blank"
@@ -21,8 +20,8 @@ const AboutMe = (props) => {
                     <a href="mailto:nicolasbricenob@gmail.com">
                         <button className={styles.btnEmail}>{props.sendEmail}</button>
                     </a>
-                </div>
             </div>
+            
         </section>
     );
 };
