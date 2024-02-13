@@ -4,7 +4,7 @@
 }
 
 .proj h1 {
-    margin: 4rem auto;
+    margin: 4rem auto 0;
     font-size: 8vw;
     color: var(--secondary-color);
 }

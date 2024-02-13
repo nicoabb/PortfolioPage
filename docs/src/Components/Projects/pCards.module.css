@@ -1,49 +1,10 @@
-.pCard {
-    display: flex;
-    column-gap: 2rem;
-    width: 80%;
-    max-width: 920px;
-    justify-content: space-evenly;
-}
 .pCard .imgBox {
-    width: fit-content;
     background-color: var(--primary-color-300);
-    padding: 2rem;
-    border-radius: 2px;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.25);
-}
-.pCard img {
-    width: 200px;
-    height: 200px;
-    margin: auto;
-    object-fit: cover;
-    border-radius: 2px;
 }
 .pCard .textBox {
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    position: relative;
     background-color: var(--primary-color-000);
-    padding: 2rem;
-    border-radius: 2px;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.25);
-}
-.pCard h3 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-}
-.pCard p {
-    font-size: 15px;
-    font-weight: 500;
-    margin-bottom: 1rem;
-}
-.pCard .btnBox {
-    display: flex;
-    column-gap: 1rem;
-    margin-top: 1.5rem;
-    position: absolute;
-    bottom: 2rem;
 }
 .pCard button {
     background-color: var(--primary-color-300);
@@ -51,9 +12,111 @@
     font-weight: bold;
     border: none;
     width: fit-content;
-    height: 2.5rem;
     cursor: pointer;
     padding-left: 1rem;
     padding-right: 1rem;
     border-radius: 2px;
+}
+.pCard p {
+    text-align: justify;
+}
+
+@media screen and (min-width: 280px) {
+    .pCard {
+        display: flex;
+        width: 80%;
+        max-width: 290px;
+        justify-content: space-evenly;
+    }
+    .pCard .imgBox {
+        display: flex;
+        width: 100%;
+        padding: 1.5rem;
+        border-radius: 2px;
+    }
+    .pCard img {
+        width: 150px;
+        height: 100%;
+        margin: auto;
+        object-fit: cover;
+        border-radius: 2px;
+    }
+    .pCard .textBox {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        padding: 1.5rem;
+        border-radius: 2px;
+    }
+    .pCard h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    .pCard p {
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+    }
+    .pCard .btnBox {
+        display: flex;
+        align-self: center;
+        column-gap: 0.5rem;
+        bottom: 1.5rem;
+    }
+    .pCard button {
+        height: 3.5rem;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .pCard {
+        column-gap: 1rem;
+        width: 90%;
+        max-width: 790px;
+    }
+    .pCard .imgBox {
+        width: fit-content;
+    }
+    .pCard .textBox {
+        width: fit-content;
+    }
+    .pCard h3 {
+        text-align: left;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    .pCard p {
+        margin-bottom: 1rem;
+    }
+    .pCard .btnBox {
+        column-gap: 1rem;
+        align-self: auto;
+    }
+    .pCard button {
+        height: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .pCard {
+        column-gap: 2rem;
+        width: 80%;
+        max-width: 920px;
+    }
+    .pCard .imgBox {
+        padding: 2rem;
+    }
+    .pCard img {
+        width: 200px;
+        height: 200px;
+    }
+    .pCard .textBox {
+        padding: 2rem;
+    }
+    .pCard .btnBox {
+        margin-top: 1.5rem;
+        bottom: 2rem;
+    }
 }
