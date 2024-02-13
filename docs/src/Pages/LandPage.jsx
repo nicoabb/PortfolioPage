@@ -2,7 +2,7 @@ import Carousel from "../Components/LandPage/Carousel";
 import CodeSkills from "../Components/LandPage/CodeSkills"
 import IntroText from "../Components/LandPage/IntroText";
 import { useTranslation } from "react-i18next";
-import introImg from "../Img/main_photo-bg.png"
+import introImg from "../Assets/main_photo-bg.png"
 import { AiFillHtml5 } from "react-icons/ai";
 import { FaCss3, FaReact } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";

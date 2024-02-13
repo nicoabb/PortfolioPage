@@ -1,11 +1,11 @@
 import styles from "./Carousel.module.css";
 import { useState, useEffect } from "react";
 import Card from "../Cards/Cards";
-import img1 from "../../Img/1.png";
-import img2 from "../../Img/2.png";
-import img3 from "../../Img/3.png";
-import img4 from "../../Img/4.png";
-import img5 from "../../Img/5.png";
+import img1 from "../../Assets/1.png";
+import img2 from "../../Assets/2.png";
+import img3 from "../../Assets/3.png";
+import img4 from "../../Assets/4.png";
+import img5 from "../../Assets/5.png";
 import { AiFillHtml5 } from "react-icons/ai";
 import { FaCss3, FaReact } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";

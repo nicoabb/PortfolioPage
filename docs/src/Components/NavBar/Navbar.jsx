@@ -6,7 +6,7 @@ import { FaLaptopCode, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
 import { IoClose } from "react-icons/io5";
 import { useTranslation } from "react-i18next";
-import resumePdf from "../../../dist/assets/resume_nicolas.pdf";
+import resumePdf from "../../Assets/resume_nicolas.pdf";
 
 const NavBar = () => {
     // LANGUAGE

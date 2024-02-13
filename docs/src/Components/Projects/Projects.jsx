@@ -1,10 +1,10 @@
 import styles from "./Projects.module.css";
 import PCards from "./pCards";
-import img1 from "../../Img/1.png";
-import img2 from "../../Img/2.png";
-import img3 from "../../Img/3.png";
-import img4 from "../../Img/4.png";
-import img5 from "../../Img/5.png";
+import img1 from "../../Assets/1.png";
+import img2 from "../../Assets/2.png";
+import img3 from "../../Assets/3.png";
+import img4 from "../../Assets/4.png";
+import img5 from "../../Assets/5.png";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from 'react-responsive';
 

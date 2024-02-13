@@ -1,5 +1,5 @@
 import AboutComponent from "../Components/About/AboutMe";
-import img1 from "../Img/about_me.png";
+import img1 from "../Assets/about_me.png";
 import { useTranslation } from "react-i18next";
 
 const About = () => {
