@@ -68,10 +68,20 @@
     }
     .aSection p {
         margin: 0 2rem;
+        max-width: 475px;
+        align-self: center;
     }
     .aSection .btnBox {
         margin: 1rem auto 3rem;
         justify-content: center;
+    }
+    .aSection button:active {
+        background-color: var(--secondary-color-a);
+    }
+    .aSection .btnEmail:active {
+        background-color: rgba(0,0,0,0);
+        border: 3px solid var(--secondary-color-a);
+        color: var(--secondary-color-a)
     }
 }
 
@@ -87,8 +97,6 @@
         position: relative;
     }
     .aSection .imgBox {
-        position: relative;
-        padding-left: 1rem;
         grid-column: 1;
         grid-row: 1/6;
         align-self: auto;
@@ -106,6 +114,8 @@
         font-size: calc(14px + 0.4vw);
         padding-top: 1rem;
         margin: 0;
+        max-width: none;
+        align-self: auto;
     }
     .aSection p:nth-child(1n) {
         grid-column: 2;
@@ -135,17 +145,20 @@
         width: 86%;
         max-width: 920px;
         margin: 6rem auto 6rem;
-        display: grid;
-        grid-template-columns: 40% 60%;
         grid-template-rows: 5;
-        position: relative;
     }
-    .aSection .imgBox {
-        position: relative;
-        padding-left: 1rem;
-        grid-column: 1;
-        grid-row: 1/6;
-        align-items: center;
+    .aSection .btnBox {
+        grid-column: 2;
+        grid-row: 5;
+        align-self: end;
+    }
+    .aSection button:hover {
+        background-color: var(--secondary-color-h);
+    }
+    .aSection .btnEmail:hover {
+        background-color: rgba(0,0,0,0);
+        border: 3px solid var(--secondary-color-h);
+        color: var(--secondary-color-h)
     }
     .aSection h1 {
         grid-column: 2;
@@ -168,11 +181,5 @@
     .aSection p:nth-child(3) {
         grid-column: 2;
         grid-row: 4;
-    }
-    .aSection .btnBox {
-        grid-column: 2;
-        grid-row: 5;
-        align-self: end;
-        padding-top: 1rem;
     }
 }

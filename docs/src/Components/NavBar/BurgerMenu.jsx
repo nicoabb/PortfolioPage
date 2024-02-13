@@ -1,6 +1,7 @@
 import styles from "./Navbar.module.css";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import resumePdf from "../../../dist/assets/resume_nicolas.pdf";
 
 const Burger = () => {
     const [t, i18n] = useTranslation("global");
@@ -29,7 +30,15 @@ const Burger = () => {
             >
                 LinkedIn
             </a>
-            <a className={styles.burgerLinks}>Resume</a>
+            <a 
+                className={styles.burgerLinks}
+                href={resumePdf}
+                download="Resume_NicolasBriceno"
+                target="_blank"
+                rel="noreferrer"
+            >
+                Resume
+            </a>
         </div>
     );
 };
