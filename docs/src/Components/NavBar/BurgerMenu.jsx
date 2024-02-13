@@ -1,7 +1,7 @@
 import styles from "./Navbar.module.css";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import resumePdf from "../../../dist/assets/resume_nicolas.pdf";
+import resumePdf from "../../Assets/resume_nicolas.pdf";
 
 const Burger = () => {
     const [t, i18n] = useTranslation("global");
